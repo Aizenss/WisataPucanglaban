@@ -275,7 +275,6 @@ main{
         flex-direction: column;
         position: absolute;
         top: 60px;
-        right: 0;
         background-color: #fff;
         box-shadow: #cccccc 0 0 10px;
         width: 100%;
