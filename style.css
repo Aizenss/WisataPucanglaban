@@ -10,18 +10,15 @@ body{
 /* Navbar */
 .navbar {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     height: 60px;
-    padding: 5px 70px;
+    padding: 5px 70px; /* Mengurangi padding agar sesuai dengan layar ponsel */
     background-color: #fff;
     box-shadow: #cccccc 0 0 10px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     z-index: 999;
+    width: 100%; /* Memastikan navbar mengambil lebar 100% */
+    box-sizing: border-box; /* Memastikan padding tidak menambah lebar total */
 }
 .logo {
     display: flex;
@@ -63,7 +60,7 @@ main{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin-top: 70px;
+    margin-top: 20px;
 }
 
 
@@ -265,9 +262,10 @@ main{
 
 
 /* Responsive Mobile*/
-@media (max-width: 768px) {
+@media (max-width: 678px) {
     .navbar {
         padding: 5px 20px;
+        max-width: 678px;
     }
 
     .nav-links {

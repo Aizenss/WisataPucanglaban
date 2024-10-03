@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-color: white;
+    font-family: 'Poppins';
+    padding: 0;
+    margin: 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 5px 70px;
+    background-color: #fff;
+    box-shadow: #cccccc 0 0 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.img-logo {
+    width: 40px;
+    height: 40px;
+}
+.logo-text {
+    font-size: 25px;
+    font-weight: bold;
+}
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    list-style: none;
+}
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.nav-links li a.active {
+    background-color: #618070;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+/* Navbar */
+
+/* Main */
+main{
+    display: flex;
+    gap: 30px;
+    margin-top: 90px;
+    margin-bottom: 50px;
+    padding: 0 70px;
+}
+/* Detail Section */
+.detail{
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    width: 100%;
+}
+.detail-text{
+    margin: 0;
+}
+.img-detail{
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+/* Detail Section */
+
+/* Aside */
+aside{
+    max-width: 30%;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.facility-card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: #cccccc 0 0 5px;
+    max-height: fit-content;
+    width: 100%;
+}
+.facility-title{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+.facility{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.facility-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.img-facility{
+    width: 120px;
+    height: 120px;
+}
+.facility-text h1{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.facility-text p{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+}
+/* Aside */
+
+/* Main */
+
+
+
+/* Responsive Mobile*/
+@media (max-width: 768px) {
+    .navbar {
+        padding: 5px 20px;
+        max-width: 768px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        background-color: #fff;
+        box-shadow: #cccccc 0 0 10px;
+        width: 100%;
+        max-width: 768px;
+        text-align: left;
+        padding: 30px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 4px;
+    }
+
+    .nav-toggle div {
+        width: 25px;
+        height: 3px;
+        background-color: black;
+    }
+    .img-logo {
+        width: 30px;
+        height: 30px;
+    }
+    .logo-text {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .nav-links li a {
+        text-decoration: none;
+        margin-left: 40px;
+        margin-top: 5px;
+        color: black;
+        font-size: 20px;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+
+
+    main {
+        flex-direction: column;
+        padding: 0 15px; /* Mengurangi padding untuk layar kecil */
+    }
+
+    .detail {
+        max-width: 100%;
+    }
+
+    .img-detail {
+        max-height: 300px; /* Mengurangi tinggi gambar */
+    }
+
+    aside {
+        max-width: 100%;
+        flex-wrap: nowrap; /* Flex nowrap untuk mobile */
+    }
+
+    .facility-item {
+        flex-direction: row; /* Tetap row, tetapi ukuran gambar lebih kecil */
+        align-items: center;
+    }
+
+    .img-facility {
+        width: 60px; /* Ukuran gambar lebih kecil untuk layar kecil */
+        height: 60px;
+    }
+
+    .facility-text h1 {
+        font-size: 16px; /* Ukuran font lebih kecil */
+    }
+
+    .facility-text p {
+        font-size: 13px; /* Ukuran font lebih kecil */
+    }
+
+}
+/* Responsive Mobile*/
