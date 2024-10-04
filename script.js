@@ -19,3 +19,13 @@ function changeActiveLink() {
 }
 
 window.addEventListener('scroll', changeActiveLink);
+
+
+
+
+var map = L.map('map').setView([-8.253474758878037, 112.01291617847129], 13);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 25,
+}).addTo(map);
+
+var marker = L.marker([-8.26258374208626, 112.0164036604159]).addTo(map);
