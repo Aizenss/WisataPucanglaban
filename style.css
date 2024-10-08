@@ -411,7 +411,14 @@ main{
         margin-top: 60px;
     }
     .maps{
+        height: 150px;
         max-width: 100%;
+        width: 100%;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
     }
     .profile-text{
         max-width:  100%;
