@@ -251,6 +251,39 @@ main{
     padding-bottom: 100px;
     color: #fff;
 }
+.profile-description{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 40px 0px;
+}
+.image-pola{
+    display: flex;
+    width: 50%;
+    gap: 10px;
+}
+.text-village{
+    width: 50%;
+}
+.image-pola img{
+    width: 320px;
+    height: 270px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.image-description-village{
+    width: 40%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
 .profile-title{
     font-size: 35px;
     font-weight: 700;
@@ -262,9 +295,6 @@ main{
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-.profile-text h2{
-    margin: 0;
 }
 .item-contact{
     gap: 20px;
@@ -426,6 +456,20 @@ main{
     .information-profile{
         flex-direction: column-reverse;
         margin-top: 60px;
+    }
+    .profile-description{
+        flex-direction: column;
+    }
+    .image-description-village{
+        width: 100%;
+    }
+    .text-village{
+        width: 100%;
+    }
+    .image-pola{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
     }
     .profile-text{
         max-width:  100%;
